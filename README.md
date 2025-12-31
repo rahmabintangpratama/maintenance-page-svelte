@@ -13,4 +13,10 @@ A simple maintenance page.
    ```sh
    npm run dev
    ```
-   Then open [http://localhost:5173](http://localhost:5173) in your browser.
+
+3. Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+## Assets
+
+- Gear icon: [Bootstrap Icons](https://icons.getbootstrap.com/icons/gear/)
+- Bubble sound: [Pixabay](https://pixabay.com/sound-effects/bubble-411852/)
