@@ -91,3 +91,125 @@
 <audio id="bubble-sound" preload="auto">
   <source src="/assets/bubble.mp3" type="audio/mpeg" />
 </audio>
+
+<style>
+.page {
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+}
+
+.card {
+    width: 100%;
+    max-width: 920px;
+    background: #ffffff;
+    border-radius: 24px;
+    border: 1px solid #e5e7eb;
+    padding: 56px 48px 40px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 30px 80px rgba(15, 23, 42, 0.15);
+}
+
+.title {
+    font-size: 2.6rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    font-size: 1.18rem;
+    line-height: 1.85;
+    color: #4b5563;
+    max-width: 720px;
+    margin: 0 auto 42px;
+}
+
+.gear-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    color: #6b7280;
+}
+
+.gear-wrap {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    transition: transform 0.2s ease;
+}
+
+.gear-wrap svg {
+    width: 100%;
+    height: 100%;
+    animation: gear-rotate 3.5s linear infinite;
+}
+
+.gear-icon:hover .gear-wrap {
+    transform: scale(1.5);
+}
+
+.hint {
+    font-size: 0.96rem;
+    color: #9ca3af;
+    cursor: pointer;
+    user-select: none;
+    margin-top: 10px;
+    transition: color 0.2s ease, transform 0.1s ease;
+}
+
+.hint:hover {
+    color: #6b7280;
+    transform: translateY(-1px);
+}
+
+@keyframes gear-rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        padding: 42px 22px 30px;
+        border-radius: 20px;
+    }
+
+    .title {
+        font-size: 2.1rem;
+    }
+
+    .subtitle {
+        font-size: 1.02rem;
+        margin-bottom: 34px;
+        max-width: none;
+    }
+
+    .gear-icon svg {
+        width: 52px;
+        height: 52px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: 34px 16px 26px;
+        border-radius: 18px;
+    }
+
+    .title {
+        font-size: 1.8rem;
+    }
+
+    .subtitle {
+        font-size: 0.98rem;
+    }
+}
+</style>
